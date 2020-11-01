@@ -1,5 +1,5 @@
 #### <div align="right">- Projeto Finalizado <div>
-# <div align="center">fronend<div>
+# <div align="center">frontend<div>
 ## <div align="center">Aplicação WEB voltada para o front que simula extração de dados de uma API do backend<div>
 ### <div align="center">Sumário <div>
 ### <div align="center">================= <div>
