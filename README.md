@@ -2,11 +2,11 @@
 ![GitHub](https://img.shields.io/github/license/Ricnaga/frontend)
 #### <div align="right">- Projeto Finalizado <div>
 
-### <div align="center"> Aplicação frontend em React abordando conceitos sobre: </div>
+### <div align="center"> Aplicação frontend em React, adiciona e busca projeto e seus proprietários, aplicação aborda conceitos sobre: </div>
 
 #### 1. HTML | CSS 
 #### 2. Javascript | localStorage
-#### 3. Bbael: configurações básicas
+#### 3. Babel: configurações básicas
 #### 4. Webpack: configurações básicas
 #### 5. ReactJS Components
 #### 6. Hook React useEffect
