@@ -1,36 +1,70 @@
-import React, {useState, useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
+import './App.css';
 import Header from './components/Header';
-import api from './services/api'
-import './App.css'
 
 
-function App (){
+function App() {
     const [projects, setProjects] = useState([]);
+    const [title, setTitle] = useState('');
+    const [owner, setOwner] = useState('');
 
     useEffect(() => {
-        api.get('projects').then(response => {
-            setProjects(response.data)
-        })
+        const project = JSON.parse(localStorage.getItem('@Projects'))
+
+        if (project) {
+            setProjects(project)
+        }
+
     }, [])
 
-   async function handleAddProject(){
-        const response = await api.post('projects', {
-            title: `Novo projeto ${Date.now()}`,
-            owner: "Ricardo Naga"
-        })
+    function handleAddProject() {
+        const project = [
+            ...projects, {
+                title: `Novo Projeto ${title}`,
+                owner: `Proprietário: ${owner}`
+            }
+        ]
+        setProjects(project)
 
-        const project = response.data
-        setProjects([...projects, project])
+        localStorage.setItem('@Projects', JSON.stringify(project))
+    }
+
+    function handleInput(target) {
+        if (target.name === 'title') {
+            return setTitle(target.value)
+        }
+        return setOwner(target.value)
     }
 
     return (
         <>
-         <Header title="Projects"/>
-          <ul>
-             {projects.map(project => <li key={project.id}>{project.title}</li>)}
-         </ul>
+            <Header title="Projetos" />
+            <ul>
+                {projects.map(project => (
+                    <li key={project.title}>
+                        {project.title}
+                        <br />
+                        {project.owner}
+                    </li>
+                )
+                )}
+            </ul>
 
-         <button type="button" onClick={handleAddProject}>Adicionar projeto</button>
+            <input
+                type="text"
+                placeholder="Nome do projeto"
+                name="title"
+                onChange={e => handleInput(e.target)}
+            />
+
+            <input
+                type="text"
+                placeholder="Nome do proprietário"
+                name="owner"
+                onChange={e => handleInput(e.target)}
+            />
+
+            <button type="button" onClick={handleAddProject}>Adicionar projeto</button>
         </>
     );
 }

@@ -1,49 +1,57 @@
+# <div align="center"> Projects </div>
+![GitHub](https://img.shields.io/github/license/Ricnaga/frontend)
 #### <div align="right">- Projeto Finalizado <div>
-# <div align="center">frontend<div>
-## <div align="center">Aplicação WEB voltada para o front que simula extração de dados de uma API do backend<div>
-### <div align="center">Sumário <div>
-### <div align="center">================= <div>
+
+### <div align="center"> Aplicação frontend em React abordando conceitos sobre: </div>
+
+#### 1. HTML | CSS 
+#### 2. Javascript | localStorage
+#### 3. Bbael: configurações básicas
+#### 4. Webpack: configurações básicas
+#### 5. ReactJS Components
+#### 6. Hook React useEffect
+#### 7. Hook React useState
+
+## <div align="center"> Sumário </div>
 <!--ts-->
-   - [Requisitos](#Requisitos)
-   - [Tecnologias utilizadas](#tecnologias-utilizadas)
-   - [Autor](#autor)
-   - [Licença](#Licença)
+   - [Requisitos](#<div-align="center">Requisitos</div>)
+   - [Tecnologias utilizadas](#<div-align="center">Tecnologias-utilizadas</div>)
+   - [Autor](#<div-align="center">Autor</div>)
 <!--te-->
-## <div align="center">Requisitos<div>
-Antes de começar é necessário instalar algumas ferramentas, tais como um editor de códigos para realizar compilação dos mesmos. Os códigos desse repositório foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/), [Git Bash](https://gitforwindows.org/) e o [Insomnia](https://insomnia.rest/download/). Após instalados, será necessário instalar o também o [Yarn](https://yarnpkg.com/) para que seja possível automatizar as instalações de todas as dependências que foram usadas nessa aplicação.
 
-No terminal, realize a clonagem do repositório.\
-$ git clone <https://github.com/Ricnaga/frontend> \
-Acesse o projeto.\
-$ cd frontend \
-Execute o comando yarn para reaver todos as dependências instaladas dessa aplicação.\
-$ yarn
-Feito todos os passos acima é hora de iniciar a aplicação.\
-$ yarn dev
-Para testar as rotas é necessário configurar o Insomnia com as rotas(No exemplo desse repositório, foi realizado a configuração das rotas via interface).
-GET: http://localhost:3333/projects \
-POST: http://localhost:3333/projects \
-PUT: http://localhost:3333/projects/id \
-DELETE: http://localhost:3333/projects/id
+##  <div align="center">Tecnologias utilizadas</div>
+- [HTML](https://www.w3.org/HTML)
+- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
+- [React JS](https://pt-br.reactjs.org/)
+- [Babel](https://babeljs.io/)
+- [Webpack](https://webpack.js.org/)
 
+## <div align="center">Requisitos</div>
+Para executar a aplicação é necessário instalar algumas ferramentas tais como um editor de códigos para realizar compilação dos mesmos. Nesse projeto foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/) para compilação do código, [Git Bash](https://gitforwindows.org/) para baixar o repositório e baixar todas as dependências necessárias. 
 
-## <div align="center">Tecnologias utilizadas<div>
-- [NodeJS](https://nodejs.org/en/) 
-- [Git Bash](https://gitforwindows.org/)
-- [Yarn](https://yarnpkg.com/getting-started/install)
-- [Insomnia](https://insomnia.rest/download/)
-- [ReactJS](https://pt-br.reactjs.org/)
-- [ExpressJS](https://expressjs.com/pt-br/starter/installing.html)
-- [Nodemon](https://nodemon.io/)
-- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [ECMAscript](https://www.ecma-international.org/publications/standards/Standard.htm)
+```bash
+# Baixe o repositório.
+$ git clone https://github.com/Ricnaga/projects.git
 
-## <div align="center">Autor<div>
-Exercícios extraídos da [Rocketseat](https://rocketseat.com.br/), realizados e respondidos por minha pessoa :) \
-Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona \
+# Acesse a pasta do projeto.
+$ cd projects
+
+# Agora que baixou e acessou o repositório, vamos começar a instalação das dependências.
+$ yarn ( caso não utilize o yarn execute apenas npm -i)
+
+# Depois de instalado todas as dependências, abra a aplicação via vscode
+$ code .
+
+# Agore execute a aplicação.
+$ yarn dev (caso não utilize o yarn: npm run dev)
+
+# A aplicação iniciará na porta 8080 
+# No navegador digite: http://localhost:8080
+```
+
+## <div align="center">Autor</div>
+<div align="center">Atividade desenvolvida para estudo dos hooks e utilização do local storage, realizados por minha pessoa.
+Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja aproveita e me adiciona.<br>
 <a href="https://www.linkedin.com/in/ricardo-nagatomy-56553254"><img src="https://img.shields.io/badge/-RicardoNaga-blue?style=flat-square&logo=Linkedin&logoColor=white"></a>
 <a href="https://app.rocketseat.com.br/me/ricardo-nagatomy-08130"><img src="https://img.shields.io/badge/-Rocketseat-000?style=flat-square&logo=&logoColor=white"></a>
-
-## <div align="center">Licença<div>
-
-![GitHub](https://img.shields.io/github/license/Ricnaga/frontend)
+</div>
